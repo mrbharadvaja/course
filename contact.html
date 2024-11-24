@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
         <nav>
+            <div class="logo">🧠 प्रॉम्प्ट इंजीनियरिंग</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="course.html">About Course</a></li>
@@ -18,17 +20,50 @@
         </nav>
     </header>
 
-    <section class="contact">
+    <!-- Hero Section -->
+    <section class="contact-hero">
         <h1>हमसे संपर्क करें</h1>
-        <form action="https://formsubmit.co/your-email@example.com" method="POST">
-            <input type="text" name="name" placeholder="आपका नाम" required>
-            <input type="email" name="email" placeholder="आपका ईमेल" required>
-            <textarea name="message" rows="5" placeholder="अपना संदेश लिखें..." required></textarea>
-            <button type="submit">भेजें</button>
-        </form>
-        <div class="map">
-            <iframe src="YOUR_GOOGLE_MAPS_LINK" allowfullscreen></iframe>
+        <p>आपके प्रश्नों और सुझावों का स्वागत है।</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>हमें संदेश भेजें</h2>
+                <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" required>
+                        <label>आपका नाम</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required>
+                        <label>आपका ईमेल</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" required></textarea>
+                        <label>आपका संदेश</label>
+                    </div>
+                    <button type="submit" class="btn-submit">भेजें</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>हमसे जुड़ें</h2>
+                <p><strong>फोन:</strong> <a href="tel:+919876543210">+91-9876543210</a></p>
+                <p><strong>ईमेल:</strong> <a href="mailto:support@example.com">support@example.com</a></p>
+                <p><strong>पता:</strong> आपका ऑफिस पता यहाँ</p>
+                <a href="https://wa.me/919876543210" class="btn-whatsapp">💬 WhatsApp पर संपर्क करें</a>
+            </div>
         </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <h2>हमारा स्थान</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.527168588186!2d144.96305831531492!3d-37.8162791797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ4JzU4LjYiUyAxNDTCsDU3JzM3LjciRQ!5e0!3m2!1sen!2s!4v1510427879157"
+            allowfullscreen="" loading="lazy">
+        </iframe>
     </section>
 
     <footer>
