@@ -6,62 +6,95 @@
     <title>प्रॉम्प्ट इंजीनियरिंग कोर्स</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
             <div class="logo">🧠 प्रॉम्प्ट इंजीनियरिंग</div>
-            <ul>
-                <li><a href="#about">कोर्स के बारे में</a></li>
-                <li><a href="#features">फायदे</a></li>
-                <li><a href="contact.html">संपर्क करें</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Course</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#purchase" class="btn-primary">Buy Now</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Home Section -->
+    <section id="home" class="hero">
         <div class="hero-content">
-            <h1>सीखें AI प्रॉम्प्ट इंजीनियरिंग</h1>
-            <p>ChatGPT और अन्य AI टूल्स से बेहतरीन परिणाम पाना सीखें।</p>
-            <a href="course.html" class="btn-primary">कोर्स खरीदें</a>
-            <a href="#features" class="btn-secondary">अधिक जानें</a>
+            <h1>Become a Prompt Engineering Expert</h1>
+            <p>Master AI tools like ChatGPT and transform your workflow.</p>
+            <a href="#about" class="btn-primary">Explore Course</a>
         </div>
     </section>
 
-    <!-- Slideshow Section -->
-    <section class="slideshow">
-        <h2>प्रमुख AI टूल्स</h2>
-        <div class="slides">
-            <div class="slide"><img src="https://ebsedu.org/wp-content/uploads/2023/07/What-is-ChatGPT.jpg" alt="ChatGPT"></div>
-            <div class="slide"><img src="https://thefusioneer.com/wp-content/uploads/2023/11/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled.jpg" alt="AI Bot"></div>
-            <div class="slide"><img src="https://knowledgecom.my/wp-content/uploads/2024/04/chat-gpt-artificial-intelligence-generative-ai.jpg" alt="Conversation"></div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About the Course</h2>
+            <p>This course is designed to help you master the art of prompt engineering for AI tools like ChatGPT.</p>
+            <div class="about-cards">
+                <div class="card">
+                    <h3>Beginner Friendly</h3>
+                    <p>Learn the basics and build a strong foundation.</p>
+                </div>
+                <div class="card">
+                    <h3>Real-World Applications</h3>
+                    <p>Get practical insights and hands-on experience.</p>
+                </div>
+                <div class="card">
+                    <h3>Certification</h3>
+                    <p>Earn a certificate to showcase your expertise.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features">
-        <h2>हमारे कोर्स के फायदे</h2>
-        <div class="feature-cards">
-            <div class="card">
-                <h3>सरल और व्यावहारिक</h3>
-                <p>हिंदी में समझने योग्य व्यावहारिक पाठ।</p>
-            </div>
-            <div class="card">
-                <h3>प्रमाणपत्र</h3>
-                <p>कोर्स पूरा करने पर प्रमाणपत्र प्राप्त करें।</p>
-            </div>
-            <div class="card">
-                <h3>आज ही शुरू करें</h3>
-                <p>शुरुआत से उन्नत तक की सभी तकनीकें।</p>
-            </div>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose This Course?</h2>
+            <ul>
+                <li>Learn advanced prompt techniques.</li>
+                <li>Practical examples and real-world projects.</li>
+                <li>Lifetime access to course materials.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Purchase Section -->
+    <section id="purchase" class="purchase">
+        <div class="container">
+            <h2>Buy the Course Now!</h2>
+            <p>Get access to exclusive content and become an expert for just ₹499.</p>
+            <a href="payment.html" class="btn-primary">Buy Now</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 प्रॉम्प्ट इंजीनियरिंग। सभी अधिकार सुरक्षित।</p>
+        <div class="container">
+            <p>&copy; 2024 Prompt Engineering. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
