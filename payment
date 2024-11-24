@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कोर्स खरीदें</title>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .btn-pay {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-pay:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>प्रॉम्प्ट इंजीनियरिंग कोर्स</h1>
+        <p>₹499 में खरीदें और प्रॉम्प्ट इंजीनियरिंग में माहिर बनें।</p>
+        <button class="btn-pay" id="rzp-button">अब खरीदें</button>
+    </div>
+
+    <script>
+        const options = {
+            key: "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay API Key
+            amount: "49900", // Amount in paise (₹499 = 49900 paise)
+            currency: "INR",
+            name: "Prompt Engineering Course",
+            description: "सीखें प्रॉम्प्ट इंजीनियरिंग",
+            image: "https://yourwebsite.com/logo.png", // Optional logo
+            handler: function (response) {
+                alert("भुगतान सफल! भुगतान आईडी: " + response.razorpay_payment_id);
+                // Optionally, send this response to your server for further processing
+            },
+            prefill: {
+                name: "ग्राहक का नाम",
+                email: "customer@example.com",
+                contact: "9876543210"
+            },
+            theme: {
+                color: "#007bff"
+            }
+        };
+
+        const rzp = new Razorpay(options);
+
+        document.getElementById('rzp-button').onclick = function (e) {
+            rzp.open();
+            e.preventDefault();
+        };
+    </script>
+</body>
+</html>
